@@ -1,0 +1,24 @@
+.logo {
+  float: left;
+}
+
+#id1 {
+
+  background-repeat    : no-repeat;
+  background-attachment: fixed;
+  background-size      : cover;
+  overflow             : auto;
+}
+
+#quote {
+  font-family: Sofia;
+  font-size  : 30px;
+}
+
+li.nav-item>a.nav-link {
+  color: blue;
+}
+
+li.nav-item>a.nav-link:hover {
+  color: white;
+}
