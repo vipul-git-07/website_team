@@ -4,8 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Work in progress</title>
+  <title>Work in progress!!</title>
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link href="./bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="./styles.css" rel="stylesheet">
 
   <style>
     .logo {
@@ -38,28 +41,22 @@
     
     document.body.background = final;
   </script>
-  <header class="text-gray-700 body-font">
-    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-        <a href="index.html"><img class="logo" src="White Transparent.png" alt="icon" width="20%" height="auto"></a>
+  <nav class="navbar sidebar-collapsed navbar-expand-lg">
+    <a class="navbar-brand" style="color: white;" href="#"><img src="White Transparent.png" width="100" height="100" alt="" loading="lazy"></a>
+    <button style="outline: unset;" id="btncol" class="navbar-toggler ml-auto hidden-sm-up float-xs-right" style="float:right;" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent">
+      <i style="color: white;" class="fa fa-bars"></i>
+    </button>
 
-        <hr style="margin-top:1px;color:gray;height:3px;background-color:gray;margin-bottom:1px;">
-      </a>
-      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-        <a class="mr-5 hover:text-white">Home</a>
-        <a class="mr-5 hover:text-white">About us</a>
-        <a class="mr-5 hover:text-white">Gallery</a>
-        <a class="mr-5 hover:text-white">Placements</a>
-      </nav>
-      <button
-        class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">Login
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-          class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-          <path d="M5 12h14M12 5l7 7-7 7"></path>
-        </svg>
-      </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About US</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Placements</a></li>
+      </ul>
     </div>
-  </header>
+  </nav>
   <div style="text-align: center; color: white; padding-bottom: 10%; padding-top: 5%;">
     <h1 style="font-size: 100px;">Hello, world!</h1>
     <p id="quote">"Everybody in this country should <br>learn how to program a
@@ -73,9 +70,16 @@
     document.getElementById("quote").innerHTML = ar[y];
      </script>
 
-  <section class="text-gray-700 body-font">
+    <script>
+      var ar = ['Whether you want to uncover the secrets of the universe, or you just want to pursue a career in the 21st century, basic computer programming is an essential skill to learn.<br> -Stephen Hawking', "Everybody in this country should <br>learn how to program a computer...<br>because it teaches you how to think.<br> -Steve Jobs", "People can be really smart or have skills that are directly applicable, but if they don't really believe in it, then they are not going to really work hard.<br> -Mark Zukerberg", "On my business card, I am a corporate president. In my mind, I am a game developer. But in my heart, I am a gamer.<br> -Satoru Iwata", "My number one piece of advice is: you should learn how to program.<br> -Mark Zukerberg", "The best investment you can make, is an investment in yourself... The more you learn, the more you'll earn.<br> -Warren Buffett", "Coding is today's language of creativity. All our children deserve a chance to become creators instead consumers of computer science.<br> -Maria Klawe", "Al is probably the most important thing humanity has ever worked on.<br> -Sundar Pichai", "People work better when they know what the goal is and why. It is important that people look forward to coming to work in the morning and enjoy working.<br> -Elon Musk", "Talk is cheap,<br>show me the code<br> -Linus Torvalds", "I taught myself how to program computers when I was a kid, bought my first computer when I was 10, and sold my first commercial program when I was 12.<br> -Elon musk"]
+      var y = Math.floor(Math.random() * 11);
+      document.getElementById("quote").innerHTML = ar[y];
+    </script>
+
+
+    <section class="text-white body-font">
       <div class="container px-5 py-24 mx-auto">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font text-center text-gray-900 mb-20">Raw Denim Heirloom Man
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-center text-white mb-20">Raw Denim Heirloom Man
           Braid
           <br class="hidden sm:block">Selfies Wayfarers
         </h1>
@@ -89,16 +93,11 @@
               </svg>
             </div>
             <div class="flex-grow pl-6">
-              <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Shooting Stars</h2>
+              <h2 class="text-white text-lg title-font font-medium mb-2">Shooting Stars</h2>
               <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan
                 taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard ugh iceland
                 kickstarter tumblr live-edge tilde.</p>
-              <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
+              
             </div>
           </div>
           <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex">
@@ -112,17 +111,11 @@
               </svg>
             </div>
             <div class="flex-grow pl-6">
-              <h2 class="text-gray-900 text-lg title-font font-medium mb-2">The Catalyzer</h2>
+              <h2 class="text-white text-lg title-font font-medium mb-2">The Catalyzer</h2>
               <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan
                 taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard ugh iceland
                 kickstarter tumblr live-edge tilde.</p>
-              <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
+              </div>
           </div>
           <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex">
             <div
@@ -134,85 +127,73 @@
               </svg>
             </div>
             <div class="flex-grow pl-6">
-              <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Neptune</h2>
+              <h2 class="text-white text-lg title-font font-medium mb-2">Neptune</h2>
               <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan
                 taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard ugh iceland
                 kickstarter tumblr live-edge tilde.</p>
-              <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
+             
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="text-gray-700 body-font">
+    <section class="text-gray-900 body-font">
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-wrap w-full mb-20">
           <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900" style="color: white;">Pitchfork
-              Kickstarter Taxidermy
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">Pitchfork Kickstarter Taxidermy
             </h1>
-
+            <div class="h-1 w-20 bg-indigo-500 rounded"></div>
           </div>
-          <p class="lg:w-1/2 w-full leading-relaxed text-base" style="color: white;">Whatever cardigan tote bag tumblr
-            hexagon brooklyn
+          <p class="lg:w-1/2 w-full leading-relaxed text-white">Whatever cardigan tote bag tumblr hexagon brooklyn
             asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun
-            deep
-            jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
+            deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
         </div>
         <div class="flex flex-wrap -m-4">
-          <div class="xl:w-1/4 md:w-1/2 p-4">
-            <div class="bg-gray-100 p-6 rounded-lg">
+          <div class=" w-full xl:w-1/4 lg:w-1/4 md:w-1/2 p-4">
+            <div class="bg-white p-6 rounded-lg">
               <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400"
                 alt="content">
               <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
               <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Chichen Itza</h2>
               <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery
-                hexagon
-                disrupt edison bulbche.</p>
+                hexagon disrupt edison bulbche.</p>
             </div>
           </div>
-          <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class=" w-full xl:w-1/4 lg:w-1/4 md:w-1/2 p-4">
             <div class="bg-gray-100 p-6 rounded-lg">
               <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/721x401"
                 alt="content">
               <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
               <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Colosseum Roma</h2>
               <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery
-                hexagon
-                disrupt edison bulbche.</p>
+                hexagon disrupt edison bulbche.</p>
             </div>
           </div>
-          <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class=" w-full xl:w-1/4 lg:w-1/4 md:w-1/2 p-4">
             <div class="bg-gray-100 p-6 rounded-lg">
               <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/722x402"
                 alt="content">
               <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
-              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Great Pyramid of Giza</h2>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Great Pyramid</h2>
               <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery
-                hexagon
-                disrupt edison bulbche.</p>
+                hexagon disrupt edison bulbche.</p>
             </div>
           </div>
-          <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="w-full xl:w-1/4 lg:w-1/4 md:w-1/2 p-4">
             <div class="bg-gray-100 p-6 rounded-lg">
               <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/723x403"
                 alt="content">
               <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
               <h2 class="text-lg text-gray-900 font-medium title-font mb-4">San Francisco</h2>
-              <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery
-                hexagon
-                disrupt edison bulbche.</p>
+              <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="text-gray-700 body-font">
+
+    <section class="text-white body-font">
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-wrap -m-4">
           <div class="p-4 md:w-1/3">
@@ -220,35 +201,12 @@
               <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/720x400"
                 alt="blog">
               <div class="p-6">
-                <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">CATEGORY</h2>
-                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
+                <h2 class="tracking-widest text-xs title-font font-medium text-white mb-1">CATEGORY</h2>
+                <h1 class="title-font text-lg font-medium text-white mb-3">The Catalyzer</h1>
                 <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
                   microdosing tousled waistcoat.</p>
-                <div class="flex items-center flex-wrap ">
-                  <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
-                      stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M5 12h14"></path>
-                      <path d="M12 5l7 7-7 7"></path>
-                    </svg>
-                  </a>
-                  <span
-                    class="text-gray-600 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-300">
-                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
-                      stroke-linejoin="round" viewBox="0 0 24 24">
-                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                      <circle cx="12" cy="12" r="3"></circle>
-                    </svg>1.2K
-                  </span>
-                  <span class="text-gray-600 inline-flex items-center leading-none text-sm">
-                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
-                      stroke-linejoin="round" viewBox="0 0 24 24">
-                      <path
-                        d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
-                      </path>
-                    </svg>6
-                  </span>
-                </div>
+               
+               
               </div>
             </div>
           </div>
@@ -257,35 +215,11 @@
               <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/721x401"
                 alt="blog">
               <div class="p-6">
-                <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">CATEGORY</h2>
-                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
+                <h2 class="tracking-widest text-xs title-font font-medium text-white mb-1">CATEGORY</h2>
+                <h1 class="title-font text-lg font-medium text-white mb-3">The 400 Blows</h1>
                 <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
                   microdosing tousled waistcoat.</p>
-                <div class="flex items-center flex-wrap">
-                  <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
-                      stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M5 12h14"></path>
-                      <path d="M12 5l7 7-7 7"></path>
-                    </svg>
-                  </a>
-                  <span
-                    class="text-gray-600 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-300">
-                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
-                      stroke-linejoin="round" viewBox="0 0 24 24">
-                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                      <circle cx="12" cy="12" r="3"></circle>
-                    </svg>1.2K
-                  </span>
-                  <span class="text-gray-600 inline-flex items-center leading-none text-sm">
-                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
-                      stroke-linejoin="round" viewBox="0 0 24 24">
-                      <path
-                        d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
-                      </path>
-                    </svg>6
-                  </span>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -294,35 +228,11 @@
               <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/722x402"
                 alt="blog">
               <div class="p-6">
-                <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">CATEGORY</h2>
-                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
+                <h2 class="tracking-widest text-xs title-font font-medium text-white mb-1">CATEGORY</h2>
+                <h1 class="title-font text-lg font-medium text-white mb-3">Shooting Stars</h1>
                 <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
                   microdosing tousled waistcoat.</p>
-                <div class="flex items-center flex-wrap ">
-                  <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
-                      stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M5 12h14"></path>
-                      <path d="M12 5l7 7-7 7"></path>
-                    </svg>
-                  </a>
-                  <span
-                    class="text-gray-600 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-300">
-                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
-                      stroke-linejoin="round" viewBox="0 0 24 24">
-                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                      <circle cx="12" cy="12" r="3"></circle>
-                    </svg>1.2K
-                  </span>
-                  <span class="text-gray-600 inline-flex items-center leading-none text-sm">
-                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
-                      stroke-linejoin="round" viewBox="0 0 24 24">
-                      <path
-                        d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
-                      </path>
-                    </svg>6
-                  </span>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -368,7 +278,9 @@
         </span>
       </div>
     </footer>
-
+    <script src="./jquery.3.2.1.min.js"></script>
+    <script src="./popper.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
 </body>
 
 </html>
