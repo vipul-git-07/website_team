@@ -10,15 +10,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="./styles.css" rel="stylesheet">
   <link rel="icon" href="white on black.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Alice">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 
 </head>
 
 <body id="id1" background=''>
   <script type="text/javascript">
-    var arr = ['37.jpg', '29.jpg', '41.jpeg', '53.jpg', '42.snxm', '48.jpg', '39.jpg', '19.jpeg', '2.jpg', '44.jpg', '15.jpg', '38.jpg', '28.jpg', '18.jpg', '40.jpeg', '30.jpg', '3.jpg', '47.jpg', '34.jpg', '52.jpg', '16.jpg', '20.jpg', '25.jpg', '22.jpg', '14.jpg', '33.jpg', '35.jpg', '24.jpg', '12.jpeg', '13.jpeg', '17.jpg', '7.jpg', '50.jpg', '36.jpg', '5.jpg', '27.jpg', '54.jpg', '6.jpg', '32.jpg', '1.jpg', '23.jpg', '10.jpg', '26.jpg', '4.jpg', '46.jpg', '43.jpg', '31.jpg', '45.jpg', '8.jpg', '9.jpg', '11.jpg', '49.jpg', '21.jpg', '51.jpg'];
-    var x = Math.floor(Math.random() * 55);
-    var str1 = "images/";
+    var arr = ['12.jpg', '3.jpg', '14.jpg', '13.jpg', '7.jpg', '5.jpg', '6.jpg', '1.jpg', '10.jpg', '4.jpg', '8.jpg', '9.jpg', '11.jpg'];
+    var x = Math.floor(Math.random() * 13);
+    var str1 = "image/";
     var final = str1.concat(arr[x]);
 
     document.body.background = final;
@@ -40,21 +41,21 @@
     </div>
   </nav>
   <div style="text-align: center; color: white; padding-bottom: 10%; padding-top: 5%;">
-    <h1 id="greet" style="font-size: 100px;">Hello, world!</h1>
-    <p style="font-family: Sofia; font-size: 30px;" id="quote" >"Everybody in this country should <br>learn how to program a
+    <h1 id="greet" style="font-size: 100px; font-family: Sofia;">Hello, world!</h1>
+    <p style="font-family: Alice; font-size: 30px; padding-top: 10px;" id="quote" >"Everybody in this country should <br>learn how to program a
       computer...<br>because it teaches you how to think."<br> -Steve Jobs</p>
 
   </div>
   <div class="container mx-auto">
 
     <script>
-      var ar = ['Whether you want to uncover the secrets of the universe, or you just want to pursue a career in the 21st century, basic computer programming is an essential skill to learn.<br> -Stephen Hawking', "Everybody in this country should <br>learn how to program a computer...<br>because it teaches you how to think.<br> -Steve Jobs", "People can be really smart or have skills that are directly applicable, but if they don't really believe in it, then they are not going to really work hard.<br> -Mark Zukerberg", "On my business card, I am a corporate president. In my mind, I am a game developer. But in my heart, I am a gamer.<br> -Satoru Iwata", "My number one piece of advice is: you should learn how to program.<br> -Mark Zukerberg", "The best investment you can make, is an investment in yourself... The more you learn, the more you'll earn.<br> -Warren Buffett", "Coding is today's language of creativity. All our children deserve a chance to become creators instead consumers of computer science.<br> -Maria Klawe", "Al is probably the most important thing humanity has ever worked on.<br> -Sundar Pichai", "People work better when they know what the goal is and why. It is important that people look forward to coming to work in the morning and enjoy working.<br> -Elon Musk", "Talk is cheap,<br>show me the code<br> -Linus Torvalds", "I taught myself how to program computers when I was a kid, bought my first computer when I was 10, and sold my first commercial program when I was 12.<br> -Elon musk"]
+      var ar = ['Whether you want to uncover the secrets of the universe, or you just want to pursue a career in the 21st century, basic computer programming is an essential skill to learn.<br> -Stephen Hawking', "Everybody in this country should <br>learn how to program a computer...<br>because it teaches you how to think.<br> -Steve Jobs", "People can be really smart or have skills that are directly applicable, but if they don't really believe in it, then they are not going to really work hard.<br> -Mark Zukerberg", "On my business card, I am a corporate president. In my mind,<br> I am a game developer. But in my heart, I am a gamer.<br> -Satoru Iwata", "My number one piece of advice is: you should learn how to program.<br> -Mark Zukerberg", "The best investment you can make, is an investment in yourself...<br> The more you learn, the more you'll earn.<br> -Warren Buffett", "Coding is today's language of creativity. All our children<br>deserve a chance to become creators instead consumers of computer science.<br> -Maria Klawe", "Al is probably the most important thing humanity has ever worked on.<br> -Sundar Pichai", "People work better when they know what the goal is and why. It is important that people look forward to coming to work in the morning and enjoy working.<br> -Elon Musk", "Talk is cheap,<br>show me the code<br> -Linus Torvalds", "I taught myself how to program computers when I was a kid, bought my first computer when I was 10, and sold my first commercial program when I was 12.<br> -Elon musk"]
       var y = Math.floor(Math.random() * 11);
-      document.getElementById("quote").innerHTML = ar[y];
+      document.getElementById("quote").innerHTML = ar[10];
       var today=new Date();
       var time=today.getHours();
       var grt="";
-      var gr=["Good Morning!","Good Afternoon!","Good Evening!","Hello World!"]
+      var gr=["Good Morning!","Good Noon!","Good Evening!","Hello World!"]
       if(time<5)
       {
         grt=gr[3];
@@ -277,5 +278,16 @@
     <script src="./popper.min.js"></script>
     <script src="./bootstrap.min.js"></script>
 </body>
+<script>
+  var typed = new Typed('#typed',{
+                 strings:["You can do anything with your text here!","Enter your text here and let Text Utils do the magic!"],
+                 backSpeed: 15,
+                 smartBackspace: true,
+                 backDelay: 1200,
+                 startDelay: 1000,
+                 typeSpeed: 80,
+                 loop: false,
 
+               });
+ </script>
 </html>
