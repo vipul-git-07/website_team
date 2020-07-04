@@ -20,8 +20,9 @@ li.nav-item>a.nav-link {
 }
 
 li.nav-item>a.nav-link:hover {
-  color: white;
-  text-decoration: underline;
+  color: rgb(96, 109, 151);
+  
+  
 }
 
 /* css file */
