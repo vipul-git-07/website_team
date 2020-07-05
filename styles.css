@@ -1,0 +1,59 @@
+.logo {
+  float: left;
+}
+
+#id1 {
+
+  background-repeat    : no-repeat;
+  background-attachment: fixed;
+  background-size      : cover;
+  overflow             : auto;
+}
+
+#quote {
+  font-family: Sofia;
+  font-size  : 30px;
+}
+
+li.nav-item>a.nav-link {
+  color:white;
+}
+
+li.nav-item>a.nav-link:hover {
+  color: rgb(96, 109, 151);
+  
+  
+}
+
+
+#logo:hover
+{
+  transform: scale(1.25)
+}
+
+.col-md-3
+{
+display: inline-block;
+margin-left:-4px;
+}
+.carousel-indicators .active {
+background-color: blue;
+  }
+.col-md-3 img{
+width:100%;
+height:auto;
+}
+body .carousel-indicator li{
+background-color: blue;
+}
+body .carousel-indicators{
+bottom: 0;
+}
+body .carousel-control-prev-icon,
+body .carousel-control-next-icon{
+background-color: blue;
+}
+ body .no-padding{
+ padding-left: 0,
+ padding-right: 0;
+ }
