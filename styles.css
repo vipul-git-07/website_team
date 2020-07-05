@@ -24,7 +24,9 @@ li.nav-item>a.nav-link:hover {
   
   
 }
-
+/* body{
+  font-family: 'Open Sans', sans-serif;
+} */
 
 #logo:hover
 {
@@ -54,6 +56,29 @@ body .carousel-control-next-icon{
 background-color: blue;
 }
  body .no-padding{
- padding-left: 0,
+ padding-left: 0;
  padding-right: 0;
  }
+
+
+
+ @media screen and (max-width: 800px) {
+  .title12 {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+}
+@media screen and (min-width: 800px ) {
+  .title123 {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+}
