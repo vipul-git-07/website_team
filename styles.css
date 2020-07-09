@@ -17,6 +17,7 @@
 
 li.nav-item>a.nav-link {
   color:white;
+  font-family: Alice;
 }
 
 li.nav-item>a.nav-link:hover {
@@ -27,13 +28,28 @@ li.nav-item>a.nav-link:hover {
 /* body{
   font-family: 'Open Sans', sans-serif;
 } */
-
+#logoo
+{
+  width:auto !important;
+  height: 90px !important;
+  border: 0px !important;
+}
+#drp{
+  background-color: transparent !important;
+  border: 0px;
+}
+#elee{
+  color:white !important;
+}
+#elee:hover{
+  background-color:rgb(70, 127, 252);
+}
 #logo:hover
 {
   transform: scale(1.25)
 }
 .active a{
-  color:rgb(122, 233, 212) !important;
+  color:#007bff !important;
 }
 .col-md-3
 {
